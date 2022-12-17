@@ -9,7 +9,7 @@ Based on OpenAI, through this project, users in China can interact with AI witho
 
 项目地址：https://github.com/Fangnan700/Chatbot
 
-![image-20221217232956129](https://yvling-typora-image-1257337367.cos.ap-nanjing.myqcloud.com/typora/image-20221217232956129.png)
+![image-20221217234403866](https://yvling-typora-image-1257337367.cos.ap-nanjing.myqcloud.com/typora/image-20221217234403866.png)
 
 
 
