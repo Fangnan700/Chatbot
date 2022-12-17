@@ -1,2 +1,2 @@
 #! /bin/bash
-./venv/bin/python -m flask run --port 8080
+./venv/bin/python -m flask run --host 0.0.0.0 --port 80

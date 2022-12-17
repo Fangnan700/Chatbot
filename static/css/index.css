@@ -1,86 +1,85 @@
 body {
+    width: 100%;
+    height: 100%;
     background: #333333;
 }
 
-#title_frame {
-    width: 420px;
-    height: 100px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#title_img {
-    width: 85px;
-    height: 85px;
-}
-
-#title_txt {
-    height: 100px;
-    line-height: 100px;
+.main {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    color: #ffffff;
-    font-size: 72px;
 }
 
-#response_frame {
-    width: 1000px;
+#content {
+    width: 100%;
     height: auto;
-    min-height: 500px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    background: rgba(255,255,255, 0.5);
+    min-height: 480px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: rgba(0,0,0, 1);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #response {
-    width: 800px;
+    width: 100%;
     height: auto;
-    min-height: 200px;
+    min-height: 380px;
+    color: #ffffff;
 }
 
 #loading_frame {
-    width: 40px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     visibility: hidden;
 }
 
-#input_frame {
-    width: 1000px;
+#input {
+    width: 100%;
     height: auto;
+    min-height: 50px;
+    line-height: 50px;
     margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background: black;
+    color: #ffffff;
+}
+
+#btn_group {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+#clear_btn {
+    width: 100px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
 
-.input_item {
-    height: auto;
-    margin-top: 10px;
+#send_btn {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
-#_input {
-    width: 1000px;
-    height: auto;
-    min-height: 40px;
-    line-height: 40px;
-    background: #ffffff;
-    border-radius: 5px;
-}
 
-#me {
-    width: 300px;
-    height: 20px;
-    line-height: 20px;
-    margin-top: 40px;
+#footer_frame {
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

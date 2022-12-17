@@ -6,7 +6,7 @@ app = Flask(__name__)
 openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 
-@app.route('/')
+@app.route('/', methods=('GET', 'POST'))
 def index():
     return render_template('index.html')
 
@@ -17,7 +17,7 @@ def send():
     data = recv['content']
     response = openai.Completion.create(
         model="text-davinci-003",
-        prompt=data+'.',
+        prompt=data + '.',
         temperature=0.8,
         n=1,
         max_tokens=2048
