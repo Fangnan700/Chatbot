@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot.</title>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.6.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <link rel="icon" href="{{ url_for('static', filename='img/robot.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+<div>
+    <div class="row" id="title_frame">
+        <div class="col" id="title_img"><img src="{{ url_for('static', filename='img/robot.png') }}" width="85px" height="85px"></div>
+        <div class="col" id="title_txt">Chatbot.</div>
+    </div>
+    <div id="response_frame">
+        <div id="response">
+
+        </div>
+    </div>
+
+    <div class="row" id="loading_frame">
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="row" id="input_frame">
+        <div class="textarea" id="_input" contenteditable="true" onfocus="clear_input_value()">
+
+        </div>
+        <input type="button" class="btn btn-secondary input_item" value="发送" onclick="send()">
+    </div>
+
+    <div class="row" id="me">
+        <footer>
+            <small>&copy; 2022 <a class="link-light" href="https://github.com/Fangnan700">created by 方楠</a></small>
+        </footer>
+    </div>
+</div>
+
+
+</body>
+</html>
