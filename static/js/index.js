@@ -27,6 +27,8 @@ function send() {
     _input.blur();
     history = document.getElementById("response").innerHTML;
     response.innerHTML = history + "<br><br>Q:<br><br>" + value;
+    response.scrollTop = response.scrollHeight;
+
     $.ajax({
         url: "/send",
         type: "post",
@@ -39,9 +41,10 @@ function send() {
                 response.innerHTML = history + "<br><br>A:" + "<br><br>" + "<pre>" + result + "</pre>";
             }
             if(query_type === "img") {
-                response.innerHTML = history + "<br><br>A:" + "<br><br>右键或长按可以查看大图和保存哦～<br><br><img src='" + result + "' alt='null' width='280px' height='280px'>";
+                response.innerHTML = history + "<br><br>A:" + "<br><br>右键或长按可以查看大图和保存哦😄<br><br><img src='" + result + "' alt='null' width='260px' height='260px'>";
             }
 
+            response.scrollTop = response.scrollHeight;
             loading_frame.style.visibility = "hidden";
         },
         error: function () {

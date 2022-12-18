@@ -38,7 +38,7 @@ def send():
             size="512x512"
         )
         image_url = response['data'][0]['url']
-        print("响应内容：" + image_url + "\n")
+        print("响应内容：" + str(response) + "\n")
         return image_url
 
     return "\n\n好像出了点问题哦，稍后再试试吧～"

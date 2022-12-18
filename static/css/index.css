@@ -12,13 +12,11 @@ body {
 
 #content {
     width: 100%;
-    height: auto;
-    min-height: 500px;
-    margin-top: 10px;
+    height: 500px;
     padding-top: 20px;
     padding-bottom: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: rgba(0,0,0, 1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -26,30 +24,43 @@ body {
 
 #response {
     width: 100%;
-    height: auto;
-    min-height: 400px;
+    height: 460px;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: auto;
+    border: #ffffff 1px solid;
     color: #ffffff;
 }
 
 #loading_frame {
     width: 30px;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     visibility: hidden;
 }
 
-#input {
+#input_frame {
     width: 100%;
     height: auto;
     min-height: 50px;
-    line-height: 50px;
-    margin-top: 20px;
-    padding-left: 30px;
-    padding-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
     border-radius: 15px;
+    background: black;
+}
+
+#input {
+    width: 100%;
+    height: auto;
+    min-height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    border: #ffffff 1px solid;
     background: black;
     color: #ffffff;
 }
