@@ -10,15 +10,23 @@ let history;
 
 
 response.innerHTML = "hi～我是Chatbot，你可以把你的问题写在下方，然后发送给我，我会尽力为你解答😆"
-_input.innerText = "请把你的问题写在这里"
+_input.innerText = "请把你的问题写在这里，按回车键或点击右下方按钮发送。"
+
+_input.onkeydown = function (event) {
+    if(event.code === "Enter") {
+        send();
+    }
+}
 
 function send() {
     send_btn.blur();
     loading_frame.style.visibility = "visible";
     let value = _input.innerText;
+    let data = {"content": value, "query_type": query_type};
+    _input.innerText = "";
+    _input.blur();
     history = document.getElementById("response").innerHTML;
     response.innerHTML = history + "<br><br>Q:<br><br>" + value;
-    let data = {"content": value, "query_type": query_type};
     $.ajax({
         url: "/send",
         type: "post",
@@ -28,7 +36,7 @@ function send() {
             history = document.getElementById("response").innerHTML;
 
             if(query_type === "txt") {
-                response.innerHTML = history + "<br><br>A:" + "<br><br>" + result;
+                response.innerHTML = history + "<br><br>A:" + "<br><br>" + "<pre>" + result + "</pre>";
             }
             if(query_type === "img") {
                 response.innerHTML = history + "<br><br>A:" + "<br><br>右键或长按可以查看大图和保存哦～<br><br><img src='" + result + "' alt='null' width='280px' height='280px'>";
@@ -59,7 +67,7 @@ function clear_input() {
 
 function clear_history() {
     clear_btn.blur();
-    _input.innerText = "";
+    _input.innerText = "请把你的问题写在这里，按回车键或点击右下方按钮发送。"
     response.innerHTML = "hi～我是Chatbot，你可以把你的问题写在下方，然后发送给我，我会尽力为你解答😆";
 }
 
