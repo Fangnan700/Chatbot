@@ -88,3 +88,16 @@ setsid ./run.sh &
 手机端也能正常使用：
 
 ![1EE60F238611E931B3ABCE4FCA1A182F](https://yvling-typora-image-1257337367.cos.ap-nanjing.myqcloud.com/typora/1EE60F238611E931B3ABCE4FCA1A182F.jpg)
+
+
+
+
+
+
+
+# 更新功能
+
+1. 更新UI设计，更好地适配移动设备；
+2. 添加了绘画模式，可以根据描述的语言生成对应的图画。
+
+![image-20221218202030161](https://yvling-typora-image-1257337367.cos.ap-nanjing.myqcloud.com/typora/image-20221218202030161.png)
