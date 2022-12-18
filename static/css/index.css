@@ -13,12 +13,12 @@ body {
 #content {
     width: 100%;
     height: auto;
-    min-height: 480px;
-    margin-top: 20px;
+    min-height: 500px;
+    margin-top: 10px;
     padding-top: 20px;
     padding-bottom: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     background: rgba(0,0,0, 1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -27,7 +27,7 @@ body {
 #response {
     width: 100%;
     height: auto;
-    min-height: 380px;
+    min-height: 400px;
     color: #ffffff;
 }
 
@@ -54,21 +54,43 @@ body {
     color: #ffffff;
 }
 
+#txt_mode_label {
+    margin-top: 15px;
+}
+
+#img_mode_label {
+    margin-top: 15px;
+}
+
+#txt_mode {
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+#img_mode {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
 #btn_group {
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: right;
+    color: #ffffff;
 }
 
 #clear_btn {
     width: 100px;
-    margin-left: auto;
+    margin-top: 10px;
+    margin-left: 30px;
     margin-right: auto;
     border-radius: 10px;
 }
 
 #send_btn {
     width: 100px;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: auto;
     border-radius: 10px;
@@ -79,7 +101,7 @@ body {
     width: 230px;
     height: 30px;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
